@@ -34,7 +34,8 @@ for option in options:
     
 driver = webdriver.Chrome(options = chrome_options)
 
-driver.get('http://bplans0.onrender.com/kaffeine_port')
+driver.get('http://bplans4.onrender.com/kaffeine_port')
 print(driver.title)
 with open('./GitHub_Action_Results.txt', 'w') as f:
     f.write(f"This was written with a GitHub action {driver.title}\n{driver.page_source}\nAt {datetime.now()}")
+
